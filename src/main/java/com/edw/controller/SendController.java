@@ -20,7 +20,7 @@ public class SendController {
     private ProduceMessages produceMessages;
 
     @GetMapping("/")
-    public String sendMessge() throws Exception {
+    public String sendMessage() throws Exception {
         produceMessages.sendMessage();
         return "";
     }

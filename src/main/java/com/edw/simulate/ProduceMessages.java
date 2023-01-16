@@ -37,7 +37,6 @@ public class ProduceMessages {
         this.topicName = topicName;
     }
 
-    @Scheduled(fixedDelay = 1L, initialDelay = 5L)
     public void sendMessage() {
         String message = "message-" + UUID.randomUUID().toString();
         ListenableFuture<SendResult<String, String>> future =
